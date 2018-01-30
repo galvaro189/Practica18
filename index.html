@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 18</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th colspan="4"><h1>Formulario de Alta</h1></th>
+    </tr>
+    <tr>
+        <td>
+            <label for="usuario">Usuario</label><br>
+            <label for="contraseña">Contraseña</label><br>
+            <label for="confcontraseña">Confirme la contraseña</label>
+        </td>
+        <td>
+            <input type="text" id="usuario" name="usuario" required><br>
+            <input type="password" id="contraseña" name="contraseña" required><br>
+            <input type="password" id="confcontraseña" name="confcontraseña" required><br>
+        </td>
+        <td colspan="2" rowspan="3"><img src="imagen/mundo.jpg" alt="Mundoocio.com"></td>
+    </tr>
+    <tr>
+        <td><label for="email">E-Mail</label><br>
+            <label for="telefono">Telefono</label><br>
+            <label for="fecha">Fecha de nacimiento</label></td>
+        <td>
+            <input type="email" id="email" name="email" required><br>
+            <input type="tel" id="telefono" name="telefono"><br>
+            <input type="date" id="fecha" name="fecha"><br>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <fieldset>
+                <legend>Intereses</legend>
+                    <table>
+                        <tr>
+                            <td><label for="Deportes">Deportes</label><input name="tipo" id="Deportes" type="checkbox" value="Deportes"></td>
+                            <td><label for="Cine">Cine</label><input name="tipo" id="Cine" type="checkbox" value="Cine"></td>
+                            <td><label for="Teatro">Teatro</label><input name="tipo" id="Teatro" type="checkbox" value="Teatro"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Musica">Musica</label><input name="Musica" id="Musica" type="checkbox" value="Musica"></td>
+                            <td><label for="Viajes">Viajes</label><input name="Viajes" id="Viajes" type="checkbox" value="Viajes"></td>
+                            <td><label for="Otros">Otros</label><input name="Otros" id="Otros" type="checkbox" value="Otros"></td>
+                        </tr>
+                    </table>
+            </fieldset>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            Sexo:
+            <input type="radio" id="Hombre" name="Sexo"><label for="Hombre">Hombre</label>
+            <input type="radio" id="Mujer" name="Sexo"><label for="Mujer">Mujer</label>
+        </td>
+        <td colspan="2">
+            <label for="conocer">¿Como conociste a MundoOcio.com?</label>
+            <select name="conocer" id="conocer">
+                <optgroup label="Recomendacion">
+                    <option value="amigos">Amigos</option>
+                    <option value="familiares">Familiares</option>
+                    <option value="otros">Otros</option>
+                </optgroup>
+                <optgroup label="Medios">
+                    <option value="Internet">Internet</option>
+                    <option value="TV">TV</option>
+                    <option value="Prensa">Prensa</option>
+                    <option value="Radio">Radio</option>
+                    <option value="Otros2">Otros</option>
+                </optgroup>
+            </select>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
