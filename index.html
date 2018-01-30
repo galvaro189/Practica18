@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Practica 18</title>
+    <link rel="stylesheet" href="estilos/estilos1.css">
 </head>
 <body>
 <form method="POST" action="http://jorgesanchez.net/servicios/ver-datos.php">
-<table border="1">
+<table id="tablaprin">
     <tr>
         <th colspan="4"><h1>Formulario de Alta</h1></th>
     </tr>
@@ -93,7 +94,15 @@
 <h1>Ir a otras zonas de MundoOcio.com</h1>
 <table>
     <tr>
-        <td colspan="4"><img src="imagen/mundo2.jpg" alt=""></td>
+        <td colspan="4">
+            <map name="mapa">
+                <area alt="Euroocc" title="Euroocc" href="enlaces/eurocc.html" coords="153,149,0,0" shape="rect" >
+                <area alt="euronor" title="euronor" href="enlaces/euronor.html" coords="300,146,156,2" shape="rect">
+                <area alt="mediterraneo" title="mediterraneo" href="enlaces/mediterraneo.html" coords="451,147,299,2" shape="rect">
+                <area alt="mar" title="mar" href="enlaces/mar.html" coords="452,1,600,149" shape="rect">
+            </map>
+            <img src="imagen/mundo2.jpg" alt="Mundo" usemap="#mapa">
+        </td>
     </tr>
     <tr align="center">
         <td><a href="enlaces/eurocc.html">Europa Occidental</a></td>
